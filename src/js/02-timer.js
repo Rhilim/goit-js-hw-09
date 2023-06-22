@@ -1,8 +1,9 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import Notiflix from 'notiflix';
 
 const startBtn = document.querySelector('button[data-start]');
-startBtn.disabled = true;
+// startBtn.disabled = true;
 const daysEl = document.querySelector('span[data-days]');
 const hoursEl = document.querySelector('span[data-hours]');
 const minutesEL = document.querySelector('span[data-minutes]');
@@ -17,7 +18,8 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < options.defaultDate) {
-      window.alert('Please choose a date in the future');
+      startBtn.setAttribute('disabled', '');
+      Notiflix.Notify.warning('Please choose a date in the future');
     }
     startBtn.removeAttribute('disabled');
     selectedDate = selectedDates[0].getTime();
@@ -73,7 +75,6 @@ function addLeadingZero() {
   startBtn.disabled = true;
 }
 
-
 // Styles
 
 const fields = document.getElementsByClassName('field');
@@ -81,8 +82,8 @@ for (let i = 0; i < fields.length; i++) {
   const field = fields[i];
 
   field.style.display = 'inline-flex';
+  field.style.flexDirection = 'column';
   field.style.fontSize = '24px';
-  field.style.gap = '10px';
 
   field.style.textAlign = 'center';
 
@@ -94,3 +95,9 @@ for (let i = 0; i < fields.length; i++) {
   labels[0].style.display = 'block';
   labels[0].style.fontSize = '12px';
 }
+
+Notiflix.Notify.init({
+  width: '300px',
+  position: 'left-top',
+  closeButton: false,
+});
