@@ -3,7 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import Notiflix from 'notiflix';
 
 const startBtn = document.querySelector('button[data-start]');
-// startBtn.disabled = true;
+startBtn.disabled = true;
 const daysEl = document.querySelector('span[data-days]');
 const hoursEl = document.querySelector('span[data-hours]');
 const minutesEL = document.querySelector('span[data-minutes]');
@@ -32,9 +32,11 @@ flatpickr('input[type="text"]', options);
 startBtn.addEventListener(
   'click',
   () => {
+    Notiflix.Notify.success('Відлік почався!!!');
     const intervalId = setInterval(() => {
       startBtn.setAttribute('disabled', '');
       addLeadingZero();
+
       if (
         daysEl.textContent === '00' &&
         hoursEl.textContent === '00' &&
@@ -45,8 +47,7 @@ startBtn.addEventListener(
       }
     });
   },
-  1000
-);
+  1000);
 
 function pad(value) {
   return String(value).padStart(2, 0);
@@ -76,29 +77,8 @@ function addLeadingZero() {
   startBtn.disabled = true;
 }
 
-// Styles
-
-// const fields = document.getElementsByClassName('field');
-// for (let i = 0; i < fields.length; i++) {
-//   const field = fields[i];
-
-//   field.style.display = 'inline-flex';
-//   field.style.flexDirection = 'column';
-//   field.style.fontSize = '24px';
-
-//   field.style.textAlign = 'center';
-
-//   const values = field.getElementsByClassName('value');
-//   const labels = field.getElementsByClassName('label');
-
-//   values[0].style.marginBottom = '5px';
-
-//   labels[0].style.display = 'block';
-//   labels[0].style.fontSize = '12px';
-// }
-
 Notiflix.Notify.init({
   width: '300px',
-  position: 'left-top',
+  position: 'center-center',
   closeButton: false,
 });
