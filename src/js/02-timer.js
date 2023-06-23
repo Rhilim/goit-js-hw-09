@@ -20,6 +20,7 @@ const options = {
     if (selectedDates[0] < options.defaultDate) {
       startBtn.setAttribute('disabled', '');
       Notiflix.Notify.warning('Please choose a date in the future');
+      return;
     }
     startBtn.removeAttribute('disabled');
     selectedDate = selectedDates[0].getTime();
@@ -77,24 +78,24 @@ function addLeadingZero() {
 
 // Styles
 
-const fields = document.getElementsByClassName('field');
-for (let i = 0; i < fields.length; i++) {
-  const field = fields[i];
+// const fields = document.getElementsByClassName('field');
+// for (let i = 0; i < fields.length; i++) {
+//   const field = fields[i];
 
-  field.style.display = 'inline-flex';
-  field.style.flexDirection = 'column';
-  field.style.fontSize = '24px';
+//   field.style.display = 'inline-flex';
+//   field.style.flexDirection = 'column';
+//   field.style.fontSize = '24px';
 
-  field.style.textAlign = 'center';
+//   field.style.textAlign = 'center';
 
-  const values = field.getElementsByClassName('value');
-  const labels = field.getElementsByClassName('label');
+//   const values = field.getElementsByClassName('value');
+//   const labels = field.getElementsByClassName('label');
 
-  values[0].style.marginBottom = '5px';
+//   values[0].style.marginBottom = '5px';
 
-  labels[0].style.display = 'block';
-  labels[0].style.fontSize = '12px';
-}
+//   labels[0].style.display = 'block';
+//   labels[0].style.fontSize = '12px';
+// }
 
 Notiflix.Notify.init({
   width: '300px',
