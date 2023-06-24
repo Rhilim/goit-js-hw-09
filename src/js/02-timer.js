@@ -79,7 +79,7 @@ function addLeadingZero() {
 
 Notiflix.Notify.init({
   width: '300px',
-  position: 'ctnter-center',
+  position: 'center-center',
   closeButton: false,
 });
 
