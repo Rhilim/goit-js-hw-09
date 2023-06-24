@@ -9,7 +9,7 @@ const hoursEl = document.querySelector('span[data-hours]');
 const minutesEL = document.querySelector('span[data-minutes]');
 const secondsEl = document.querySelector('span[data-seconds]');
 
-let selectedDate;
+// let selectedDate;
 
 const options = {
   enableTime: true,
@@ -32,7 +32,7 @@ flatpickr('input[type="text"]', options);
 startBtn.addEventListener(
   'click',
   () => {
-    Notiflix.Notify.success('Відлік почався!!!');
+    Notiflix.Notify.success("It's a final COUNTDOWN!!!");
     const intervalId = setInterval(() => {
       startBtn.setAttribute('disabled', '');
       addLeadingZero();
@@ -79,6 +79,35 @@ function addLeadingZero() {
 
 Notiflix.Notify.init({
   width: '300px',
-  position: 'center-center',
+  position: 'ctnter-center',
   closeButton: false,
 });
+
+
+
+// STYLES
+
+const timerElement = document.querySelector('.timer');
+const fieldElements = document.querySelectorAll('.field');
+const valueElements = document.querySelectorAll('.value');
+const labelElements = document.querySelectorAll('.label');
+
+timerElement.style.display = 'flex';
+timerElement.style.columnGap = '15px';
+
+fieldElements.forEach(fieldElement => {
+  fieldElement.style.display = 'flex';
+  fieldElement.style.flexDirection = 'column';
+  fieldElement.style.alignItems = 'center';
+});
+
+valueElements.forEach(valueElement => {
+  valueElement.style.fontSize = '36px';
+  valueElement.style.fontWeight = '600';
+});
+
+labelElements.forEach(labelElement => {
+  labelElement.style.fontSize = '12px';
+});
+
+
