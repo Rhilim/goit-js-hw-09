@@ -9,7 +9,7 @@ const hoursEl = document.querySelector('span[data-hours]');
 const minutesEL = document.querySelector('span[data-minutes]');
 const secondsEl = document.querySelector('span[data-seconds]');
 
-// let selectedDate;
+let selectedDate;
 
 const options = {
   enableTime: true,
@@ -24,7 +24,7 @@ const options = {
     }
     startBtn.removeAttribute('disabled');
     selectedDate = selectedDates[0].getTime();
-    // console.log(selectedDate);
+
   },
 };
 flatpickr('input[type="text"]', options);
