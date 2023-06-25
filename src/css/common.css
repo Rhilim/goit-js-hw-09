@@ -7,10 +7,10 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
   color: #212121;
   line-height: 1.5;
-background-image: radial-gradient(circle at 50% -20.71%, #ffddfc 0, #fdd0f8 16.67%, #efc3f5 33.33%, #deb5f2 50%, #caa9f0 66.67%, #b49eef 83.33%, #9a96ee 100%);
+background-color: #E7CEA6;
 }
 
 img {
@@ -18,3 +18,34 @@ img {
   max-width: 100%;
 }
 
+a {
+  font-family: Helvetica;
+  text-decoration: none;
+  padding: 10px 8px 10px 8px;
+  background-color: #0A6EBD;
+  border: #A1C2F1 2px solid;
+  border-radius: 1em;
+  color: #E7CEA6;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+a:hover {
+  color: #FFA41B;
+  background-color: #5A96E3;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 40px 30px -7px;
+  transition: color 250ms ease-in-out, background-color 250ms linear, box-shadow 300ms linear;
+  
+}
+
+ul {
+  margin-top: 120px;
+  display: flex;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  padding-left: 0px;
+}
