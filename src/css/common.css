@@ -10,9 +10,11 @@ body {
   background-color: #fafafa;
   color: #212121;
   line-height: 1.5;
+background-image: radial-gradient(circle at 50% -20.71%, #ffddfc 0, #fdd0f8 16.67%, #efc3f5 33.33%, #deb5f2 50%, #caa9f0 66.67%, #b49eef 83.33%, #9a96ee 100%);
 }
 
 img {
   display: block;
   max-width: 100%;
 }
+

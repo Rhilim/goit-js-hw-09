@@ -24,7 +24,6 @@ const options = {
     }
     startBtn.removeAttribute('disabled');
     selectedDate = selectedDates[0].getTime();
-
   },
 };
 flatpickr('input[type="text"]', options);
@@ -47,7 +46,8 @@ startBtn.addEventListener(
       }
     });
   },
-  1000);
+  1000
+);
 
 function pad(value) {
   return String(value).padStart(2, 0);
@@ -83,17 +83,17 @@ Notiflix.Notify.init({
   closeButton: false,
 });
 
-
-
 // STYLES
 
-const dayContainer = document.getElementsByClassName('flatpickr-innerContainer'); 
+const dayContainer = document.getElementsByClassName(
+  'flatpickr-innerContainer');
+
 const timerElement = document.querySelector('.timer');
 const fieldElements = document.querySelectorAll('.field');
 const valueElements = document.querySelectorAll('.value');
 const labelElements = document.querySelectorAll('.label');
 
-dayContainer.style.backGroundColor = 'red';
+// dayContainer.style.backGroundColor = 'red';
 
 timerElement.style.display = 'flex';
 timerElement.style.columnGap = '15px';
@@ -112,7 +112,6 @@ valueElements.forEach(valueElement => {
 labelElements.forEach(labelElement => {
   labelElement.style.fontSize = '12px';
 });
-
 
 // const ref = {
 //   bodyView: document.querySelector('body'),
