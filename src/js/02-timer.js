@@ -87,13 +87,13 @@ Notiflix.Notify.init({
 
 // STYLES
 
-const dayContainer = document.querySelector('.dayContainer'); 
+const dayContainer = document.getElementsByClassName('flatpickr-innerContainer'); 
 const timerElement = document.querySelector('.timer');
 const fieldElements = document.querySelectorAll('.field');
 const valueElements = document.querySelectorAll('.value');
 const labelElements = document.querySelectorAll('.label');
 
-dayContainer.style.backGroundColor = 'yellow';
+dayContainer.style.backGroundColor = 'red';
 
 timerElement.style.display = 'flex';
 timerElement.style.columnGap = '15px';
