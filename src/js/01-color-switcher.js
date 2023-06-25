@@ -33,16 +33,16 @@ function onStopBtnClick() {
 
 refs.body.style.cssText = `display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 50px`;
 refs.startBtn.style.cssText = `font-size: 20px; color: #E7CEA6; width: 120px; height: 80px; border-radius: 20px; background-color: #5A96E3; font-family: Helvetica; 
-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; cursor: pointer; border: none; hover: background-color: #5A96E3; `;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; cursor: pointer; border: none; hover: background-color: #5A96E3; `;
 
-refs.stopBtn.style.cssText= `font-size: 20px; color: #E7CEA6; width: 120px; height: 80px; border-radius: 20px; background-color: #5A96E3; font-family: Helvetica; 
-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; cursor: pointer; border: none; hover: background-color: #5A96E3; `;;
+refs.stopBtn.style.cssText = `font-size: 20px; color: #E7CEA6; width: 120px; height: 80px; border-radius: 20px; background-color: #5A96E3; font-family: Helvetica; 
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; cursor: pointer; border: none; hover: background-color: #5A96E3; `;;
 
 refs.startBtn.addEventListener('mouseover', function () {
   refs.startBtn.style.backgroundColor = '#0A6EBD';
   refs.startBtn.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 40px 30px -7px';
   refs.startBtn.style.transition = 'color 250ms ease-in-out, background-color 250ms linear, box-shadow 300ms linear';
-  refs.startBtn.style.color = 'black';
+  refs.startBtn.style.color = '#FFA41B';
 });
 
 refs.startBtn.addEventListener('mouseout', function () {
@@ -55,7 +55,7 @@ refs.stopBtn.addEventListener('mouseover', function () {
   refs.stopBtn.style.boxShadow = 'rgba(0, 0, 0, 0.2) 0px 40px 30px -7px';
   refs.stopBtn.style.transition =
     'color 250ms ease-in-out, background-color 250ms linear, box-shadow 300ms linear';
-  refs.stopBtn.style.color = 'black';
+  refs.stopBtn.style.color = '#FFA41B';
 });
 
 refs.stopBtn.addEventListener('mouseout', function () {
