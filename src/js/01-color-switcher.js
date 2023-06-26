@@ -36,8 +36,8 @@ refs.body.style.cssText = `display: flex; justify-content: center; align-items: 
 refs.startBtn.style.cssText = `font-size: 20px; color: #E7CEA6; width: 120px; height: 80px; border-radius: 20px; background-color: #1B6B93; font-family: Helvetica; 
 box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; cursor: pointer; border: none; hover: background-color: #5A96E3; `;
 
-refs.stopBtn.style.cssText = `font-size: 20px; color: #E7CEA6; width: 120px; height: 80px; border-radius: 20px; background-color: #1B6B93; font-family: Helvetica; 
-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; cursor: pointer; border: none; hover: background-color: #5A96E3; `;;
+refs.stopBtn.style.cssText = `font-size: 20px; color: rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3); width: 120px; height: 80px; border-radius: 20px; background-color: rgba(239, 239, 239, 0.3); font-family: Helvetica; 
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; cursor: pointer; border: none; `;
 
 refs.startBtn.addEventListener('mouseover', function () {
   refs.startBtn.style.backgroundColor = '#0A6EBD';
