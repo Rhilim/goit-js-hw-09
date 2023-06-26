@@ -22,10 +22,10 @@ a {
   font-family: Helvetica;
   text-decoration: none;
   padding: 10px 8px 10px 8px;
-  background-color: #0A6EBD;
+  /* background-color: #0A6EBD; */
   border: #A1C2F1 2px solid;
   border-radius: 1em;
-  color: #E7CEA6;
+  color: #5A96E3;
   cursor: pointer;
   align-items: center;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
