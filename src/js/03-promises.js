@@ -63,3 +63,8 @@ createBtn.addEventListener('mouseout', function () {
   createBtn.style.backgroundColor = '#5A96E3';
   createBtn.style.color = '#E7CEA6';
 });
+
+const labels = document.querySelectorAll('label');
+labels.forEach(label => {
+  label.style.cssText = `fontSize: 12px; color: #1B6B93;`;
+})
